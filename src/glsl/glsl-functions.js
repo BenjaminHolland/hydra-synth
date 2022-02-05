@@ -67,20 +67,23 @@ const types = {
 }
 
 */
-
 module.exports = () => [
   {
   name: 'noise',
+  doc: 'Source that generates perlin noise. ',
   type: 'src',
   inputs: [
     {
-      type: 'float',
       name: 'scale',
+      doc: 'The scale of the generated noise.',
+      type: 'float',
       default: 10,
     },
 {
+  
+  name: 'offset',
       type: 'float',
-      name: 'offset',
+      doc: 'The offset of the noise',
       default: 0.1,
     }
   ],
